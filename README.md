@@ -1,4 +1,4 @@
-# POO1
+﻿# POO1
 
 3 classes:
 
@@ -17,3 +17,5 @@ Metodos		-> contrutor(revista), construtor(livro), getsituação.
 	Usuario:
 Atributos	-> Nome, ID, Array de itens, Operador.
 metodo		-> construtor(operador), getoperador.
+
+http://yuml.me/
