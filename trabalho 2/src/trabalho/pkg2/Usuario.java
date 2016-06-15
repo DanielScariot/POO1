@@ -1,15 +1,18 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-
 package trabalho.pkg2;
 
-/**
- *
- * @author 10001423967
- */
 public class Usuario {
+    String Nome;
+    int ID;
+    Item[] LivrosLocados;
+    boolean Operador;
+    public Usuario(String nome, int id, int espaco){
+        this(nome, id, espaco, false);
+    }
+    public Usuario(String nome, int id, int espaco, boolean operador){
+        this.Nome = nome;
+        this.ID = id;
+        this.LivrosLocados = new Item[espaco];
+        this.Operador = operador;
+    }
     
 }

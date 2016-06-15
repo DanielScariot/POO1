@@ -25,8 +25,13 @@ public class Biblioteca {
     private void locarItem(Item x,Usuario u){
         for(int i = 0; i < acervo.length; i++){
             if(x == acervo[i]){
-                if(){
-                    
+                if(x.getdisponivel()){
+                    x.Disponivel = false;
+                    for(int aux = 0; aux < u.LivrosLocados.length; aux++){
+                        if(u.LivrosLocados[aux]== null){
+                            u.LivrosLocados[aux] = x;
+                        }
+                    }
                 }
             }
         }
