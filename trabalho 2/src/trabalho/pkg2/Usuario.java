@@ -1,10 +1,10 @@
 package trabalho.pkg2;
 
 public class Usuario {
-    String Nome;
-    int ID;
+    private String Nome;
+    private int ID;
     Item[] LivrosLocados;
-    boolean Operador;
+    private boolean Operador;
     public Usuario(String nome, int id, int espaco){
         this(nome, id, espaco, false);
     }
@@ -14,5 +14,27 @@ public class Usuario {
         this.LivrosLocados = new Item[espaco];
         this.Operador = operador;
     }
+
+    public Item[] getLivrosLocados() {
+        return LivrosLocados;
+    }
+
+    public int getID() {
+        return ID;
+    }
+
+    public String getNome() {
+        return Nome;
+    }
+
+    public void setLivrosLocados(Item[] LivrosLocados) {
+        this.LivrosLocados = LivrosLocados;
+    }
+
+    public boolean isOperador() {
+        return Operador;
+    }
+    
+    
     
 }
